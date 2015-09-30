@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> Lab 5 </title>
+<title> Lab 4 </title>
 <script src="script/processing.js"></script>
 <script type="text/processing" data-processing-target="mycanvas">
 
@@ -49,6 +49,64 @@ void draw()
     fill(0,0,0);
     text("$288",405,280);
     
+    if (mouseY > 260 && mouseY < 290 &&
+      mouseX > 69 && mouseX < 139) 
+      {
+         stroke(0,0,0);
+         fill(0,255,0);
+         rect(69,260,70,30); 
+      }
+    
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+
+
+
+text("Hello World!",120,120);
+
+}
+
+  
+void draw()
+{
+  background(0,0,0);
+  
+  fill(255,0,0);
+  rect(50,50,200,100);
+  
+  text(mouseX,10,10);
+  text(mouseY,50,10);
+
+if (mouseY > 50 && mouseY < 150 &&
+      mouseX > 50 && mouseX < 250) 
+  {
+    text("Your mouse cursor is inside the box",350,50);
+  }
+  
+  // nested IF
+  if (mouseY > 50)
+  {
+      if (mouseY < 150)
+      {
+          if (mouseX > 50)
+          {
+              if (mouseX < 250)
+              {
+                text("Your mouse cursor is inside the box",350,50);
+              }
+           }
+      }
+   }
 }
 
 </script>
